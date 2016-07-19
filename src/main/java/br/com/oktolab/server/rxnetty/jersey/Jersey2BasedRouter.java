@@ -1,4 +1,4 @@
-package br.com.oktolab.server.rxnetty.jersey.blocking;
+package br.com.oktolab.server.rxnetty.jersey;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -29,7 +29,6 @@ import org.slf4j.LoggerFactory;
 
 import com.google.inject.Injector;
 
-import br.com.oktolab.server.rxnetty.jersey.PropertiesBasedResourceConfig;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufOutputStream;
 import io.netty.handler.codec.http.HttpResponseStatus;

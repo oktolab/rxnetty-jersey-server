@@ -1,4 +1,4 @@
-package br.com.oktolab.server.rxnetty.jersey.blocking;
+package br.com.oktolab.server.rxnetty.jersey;
 
 import java.io.IOException;
 import java.io.InputStream;

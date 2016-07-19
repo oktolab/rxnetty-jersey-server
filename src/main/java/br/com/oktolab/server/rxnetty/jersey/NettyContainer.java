@@ -1,4 +1,4 @@
-package br.com.oktolab.server.rxnetty.jersey.blocking;
+package br.com.oktolab.server.rxnetty.jersey;
 
 import javax.ws.rs.core.Application;
 

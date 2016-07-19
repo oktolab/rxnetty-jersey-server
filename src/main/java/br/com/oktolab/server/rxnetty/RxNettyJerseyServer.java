@@ -7,7 +7,7 @@ import com.google.inject.Module;
 import com.netflix.governator.guice.LifecycleInjector;
 import com.netflix.governator.lifecycle.LifecycleManager;
 
-import br.com.oktolab.server.rxnetty.jersey.blocking.Jersey2BasedRouter;
+import br.com.oktolab.server.rxnetty.jersey.Jersey2BasedRouter;
 import io.netty.buffer.ByteBuf;
 import io.reactivex.netty.RxNetty;
 

@@ -1,4 +1,4 @@
-package br.com.oktolab.server.rxnetty.jersey.blocking;
+package br.com.oktolab.server.rxnetty.jersey;
 
 import io.netty.buffer.ByteBuf;
 import io.reactivex.netty.protocol.http.server.HttpServerRequest;
