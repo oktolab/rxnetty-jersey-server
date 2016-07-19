@@ -11,7 +11,7 @@ import br.com.oktolab.server.rxnetty.jersey.blocking.Jersey2BasedRouter;
 import io.netty.buffer.ByteBuf;
 import io.reactivex.netty.RxNetty;
 
-public class HttpServer {
+public class RxNettyJerseyServer {
 	
 	private List<Module> modules;
 	private Injector injector;

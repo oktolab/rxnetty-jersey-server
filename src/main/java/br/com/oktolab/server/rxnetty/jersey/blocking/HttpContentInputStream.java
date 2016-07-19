@@ -14,6 +14,9 @@ import io.netty.buffer.ByteBufAllocator;
 import rx.Observable;
 import rx.Observer;
 
+/**
+ * @author Nitesh Kant
+ */
 public class HttpContentInputStream extends InputStream {
 
     private static final Logger logger = LoggerFactory.getLogger(HttpContentInputStream.class);

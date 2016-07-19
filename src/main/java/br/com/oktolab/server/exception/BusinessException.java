@@ -1,4 +1,4 @@
-package br.com.oktolab.server.rxnetty.exception;
+package br.com.oktolab.server.exception;
 
 import com.google.gson.JsonObject;
 

@@ -20,11 +20,11 @@ import org.glassfish.jersey.server.internal.scanning.PackageNamesScanner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import br.com.oktolab.server.rxnetty.ConfigurationConstants;
+
 public class PropertiesBasedResourceConfig extends ResourceConfig {
 
 	private static final Logger logger = LoggerFactory.getLogger(PropertiesBasedResourceConfig.class);
-	private static final String JERSEY_ROOT_PACKAGE = "jersey.config.server.provider.packages";
-	public static final String PROPERTY_PACKAGES = JERSEY_ROOT_PACKAGE;
     public static final String COMMON_DELIMITERS = " ,;\n";
     
     private volatile boolean initialized;
@@ -44,9 +44,9 @@ public class PropertiesBasedResourceConfig extends ResourceConfig {
             return;
         }
         initialized = true;
-        String pkgNamesStr = getConfigInstance().getString(PROPERTY_PACKAGES, null);
+        String pkgNamesStr = getConfigInstance().getString(ConfigurationConstants.JERSEY_ROOT_PACKAGE, null);
         if (null == pkgNamesStr) {
-            logger.warn("No property defined with name: " + PROPERTY_PACKAGES +
+            logger.warn("No property defined with name: " + ConfigurationConstants.JERSEY_ROOT_PACKAGE +
                         ", this means that jersey can not find any of your resource/provider classes.");
         } else {
             String[] pkgNames = getElements(new String[]{pkgNamesStr}, COMMON_DELIMITERS);
@@ -60,7 +60,7 @@ public class PropertiesBasedResourceConfig extends ResourceConfig {
 
     private Map<String, Object> createPropertiesMap() {
         Properties properties = new Properties();
-        Iterator<String> iter = getConfigInstance().getKeys(JERSEY_ROOT_PACKAGE);
+        Iterator<String> iter = getConfigInstance().getKeys(ConfigurationConstants.JERSEY_ROOT_PACKAGE);
         Map<String, Object> propertiesMap = new HashMap<String, Object>();
         while (iter.hasNext()) {
             String key = iter.next();

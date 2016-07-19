@@ -1,4 +1,4 @@
-package br.com.oktolab.server.rxnetty.provider.filter;
+package br.com.oktolab.server.provider.filter;
 
 import java.io.IOException;
 import java.util.List;

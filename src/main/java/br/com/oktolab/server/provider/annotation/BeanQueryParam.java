@@ -1,4 +1,4 @@
-package br.com.oktolab.server.rxnetty.provider.annotation;
+package br.com.oktolab.server.provider.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

@@ -1,4 +1,4 @@
-package br.com.oktolab.server.rxnetty.provider;
+package br.com.oktolab.server.provider;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -28,7 +28,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import br.com.oktolab.gson.GSON;
-import br.com.oktolab.server.rxnetty.provider.annotation.BeanQueryParam;
+import br.com.oktolab.server.provider.annotation.BeanQueryParam;
 
 @Produces(MediaType.APPLICATION_JSON)
 @Provider

@@ -1,4 +1,4 @@
-package br.com.oktolab.server.rxnetty.provider;
+package br.com.oktolab.server.provider;
 
 //import java.util.ArrayList;
 

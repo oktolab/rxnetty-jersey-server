@@ -1,4 +1,4 @@
-package br.com.oktolab.server.rxnetty.provider;
+package br.com.oktolab.server.provider;
 
 import javax.ws.rs.ForbiddenException;
 import javax.ws.rs.NotAuthorizedException;
@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 
 import com.google.gson.Gson;
 
-import br.com.oktolab.server.rxnetty.exception.BusinessException;
+import br.com.oktolab.server.exception.BusinessException;
 
 @Provider
 public class ExceptionMapperProvider implements ExceptionMapper<Throwable> {
